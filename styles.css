@@ -1,4 +1,4 @@
-   *{
+       *{
             margin: 0;
             padding: 0;
             box-sizing: border-box; /* impede que o tamanho da cixa mude */
@@ -124,10 +124,11 @@
 
             width: 100%;
             height: 1051px;
-            left: 352px;
-            top: 464px;
+            /*left: 352px;
+            top: 464px; */
             padding: 80px 0px 80px 0px;
             gap: 72px;
+            
         }
 
         #cabecalho-loja{
@@ -137,6 +138,7 @@
             width: 593px;
             height: 127px;
             gap: 24px;   
+            
         }
 
         #titulo-loja{
@@ -152,7 +154,7 @@
         #texto-loja{
         width: 593px;
         height: 68px;
-        white-space: pre-line;
+        white-space: pre-line;        
         font-family: Archivo;
         font-size: 24px;
         font-weight: 400;
@@ -167,6 +169,7 @@
         width: 1216px;
         height: 692px;
         gap: 32px;
+        
         }
 
         .container{
@@ -176,18 +179,19 @@
             flex-direction: column;
             justify-content: space-between;
             text-align: left;
+            
         }
 
 
         .tenis{
             
-            width: 384px;
+            width: 100%;
             height: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #F3F7FF;
-            ;
+            
             
         }
 
@@ -206,7 +210,9 @@
             gap: 12px; 
             margin-top: 12px; 
             text-align: left;
-            font-family: Archivo;       
+            font-family: Archivo;
+         
+                   
         }
 
         .nome-tenis{
@@ -236,7 +242,7 @@
         .preco {
             display: flex;
             flex-direction: column;
-            align-items: flex-end; /* Alinha o conteúdo na extremidade direita */
+            /*align-items: flex-start;  Alinha o conteúdo na extremidade direita */
             width: 107px;
             height: 26px;
             font-family: Space Grotesk;
@@ -252,6 +258,7 @@
         @media (max-width: 768px) {
             #top-fixed{
                 height: 41px;
+                width: 100%;
             }
 
             #frete-gratis h4{
@@ -262,18 +269,28 @@
             }
 
             #hero {
+                background: linear-gradient(0deg, rgba(18, 18, 20, 0.75), rgba(18, 18, 20, 0.75)), url(Imagens/Jordan.png);
                 height: 350px;
                 padding-top: 41px;
+                
+                background-size: cover; /* obriga a imagem a cobrir todo o espaço da tela*/
+                width: 100%;
             }
 
             #titulo-hero{
-                height: 152px;
-                align-items: ;
+                width: 457px;
+                height: 162px;
+                margin-left: 172px;
+                gap: 30px;
             }
+
 
             #caixa-vetor{
                 width: 142px;
                 height: 24px;
+                display: flex;
+                flex-direction: row;
+
             }
 
             #vetor{
@@ -311,7 +328,7 @@
             }
 
             #loja{
-                width: 704px;
+                width: 100%;
                 Height: 1315px;
                 top: 391px;
                 left: 32px;
@@ -359,8 +376,150 @@
         }
 
         @media (max-width: 480px) {
+            #top-fixed{
+                height: 39px;
+                width: 100%;
+            }
 
-        }
+            #frete-gratis h4{
+                width: 185px;
+                height: 15px;        
+                font-size: 14px;
+                line-height: 15.23px;           
+            }
+
+            #hero {
+                background: linear-gradient(0deg, rgba(18, 18, 20, 0.75), rgba(18, 18, 20, 0.75)), url(Imagens/Jordan.png);
+                height: 350px;
+                padding-top: 39px;
+                
+                background-size: cover; /* obriga a imagem a cobrir todo o espaço da tela*/
+                display: flex;
+                flex-direction: column;
+            }
+
+            #titulo-hero{
+                width: 328px;
+                height: 168px;
+                margin-left: 24px;
+                gap: 20px;
+            }
+            
+
+            #caixa-vetor{
+                width: 142px;
+                height: 24px;
+            }
+
+            #vetor{
+                width: 24px;
+                height: 24px;
+                padding: 3px 2.59px 3.03px 2.21px;
+                }
+
+            #frase-vetor{
+                width: 110px;
+                height: 20px;
+                font-size: 18px;
+                line-height: 19.58px;
+                
+            }
+
+            #descricao-hero{
+                width: 328px;
+                height: 104px;
+                gap: 12px;
+                
+            }
+
+            #titulo{
+                width: 328px;
+                height: 26px;
+                font-size: 24px;
+                line-height: 26.11px;
+                
+            }
+
+            #conteudo{
+                width: 328px;
+                height: 66px;
+                font-size: 16px;
+                line-height: 22.4px;
+            }
+
+            #loja{
+                
+                width: 100%;
+                Height: 2421px;
+                top: 391px;
+                left: 32px;
+                padding: 56px 0px 56px 0px;
+                gap: 40px;
+            }
+
+            #cabecalho-loja{
+                width: 319px;
+                height: 94px;
+                gap: 12px;
+            }
+
+            #titulo-loja{
+                width: 227px;
+                height: 22px;
+                font-size: 20px;
+                line-height:21.76px;
+                
+            }
+            
+
+            #texto-loja{
+                width: 100%;
+                height: 60px;
+                font-size: 14px;
+                line-height: 19.6px; 
+                word-break: break-word;              
+            }
+
+            #shop{
+                
+                width: 319px;
+                height: 2175px;
+                margin: 32px;
+            }
+
+            .container{
+                width: 319px;             
+                gap: 24px;
+                Height: 326px;         
+            }
+
+            .tenis{
+                
+                width: 100%;
+                height: 200px;
+                gap: 10px;
+            }
+
+            .descricao{
+                width: 100%;
+                height: 50px;
+
+            }
+            
+            .nome-tenis{
+                width: 100%;
+                height: 23px;
+                font-size: 16px;
+                line-height: 20.8px;                
+            }
+
+            .preco{
+                width: 107px;
+                margin-top: 0px;           
+            }
+
+
+    }
 
 
 
