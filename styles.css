@@ -1,525 +1,497 @@
-       *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box; /* impede que o tamanho da cixa mude */
-            
-            
-        }
-
-        #top-fixed{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 64px;
-            gap: 10px;
-            background-color: #F3F7FF;
-        }
-
-        #frete-gratis h4{
-            width: 316px;
-            height: 64px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #F3F7FF;
-
-
-            font-family: Archivo;
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 26.11px;
-            text-align: center;
-            color: #121214; 
-        }
-
-        #hero{
-        width: 100%;
-        height: 400px;
-        background: linear-gradient(0deg, rgba(18, 18, 20, 0.75), rgba(18, 18, 20, 0.75)), url(Imagens/Jordan.png);
-        padding-top:94px;
-        }
-
-        #titulo-hero{
-        display: flex;
-        flex-direction: column;
-        width: 557px;
-        height: 211px;
-        margin-left: 352px;
-        gap: 40px;
-        }
-
-        #caixa-vetor{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 203px;
-        height: 48px;
-        gap: 8px;
-        }
-
-        #vetor{
-            display: flex;
-            width: 38.4px;
-            height: 35.94px;
-            top: 6px;
-            left: 4.42px;
-
-            color: #FFFFFF;
-
-        }
-
-        #frase-vetor{
-            display: flex;
-            width: 147px;
-            height: 26px;
-        
-            font-family: Archivo;
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 26.11px;
-            text-align: left;
-            color: #FFFFFF;
-        }
-
-        #descricao-hero{
-        display: flex;
-        flex-direction: column;
-        width: 557px;
-        height: 123px;
-        gap: 20px;
-        opacity: 0px;
-        }
-
-        #titulo{
-            width: 339px;
-            height: 35px;
-
-            font-family: Archivo;
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 34.82px;
-            text-align: left;
-            color: #FFFFFF;
-        }
-
-        #conteudo{
-            white-space: pre-line; /* serve para que a quebra do html funcione aqui */
-            width: 557px;
-            height: 68px;
-            font-family: Archivo;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 33.6px;
-            text-align: left;
-            color: #FFFFFF;
-        }
-
-
-
-        #loja{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            width: 100%;
-            height: 1051px;
-            /*left: 352px;
-            top: 464px; */
-            padding: 80px 0px 80px 0px;
-            gap: 72px;
-            
-        }
-
-        #cabecalho-loja{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 593px;
-            height: 127px;
-            gap: 24px;   
-            
-        }
-
-        #titulo-loja{
-        width: 363px;
-        height: 35px;
-        font-family: Archivo;
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 34.82px;
-        text-align: center;
-        }
-
-        #texto-loja{
-        width: 593px;
-        height: 68px;
-        white-space: pre-line;        
-        font-family: Archivo;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 33.6px;
-        text-align: center;
-        }
-
-        #shop{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 1216px;
-        height: 692px;
-        gap: 32px;
-        
-        }
-
-        .container{
-            width: calc(33.33% - 32px);
-            height: 326px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: left;
-            
-        }
-
-
-        .tenis{
-            
-            width: 100%;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #F3F7FF;
-            
-            
-        }
-
-        .tenis img{
-            
-            width: 225px;
-            height: 135px;
-            margin: auto;
-        }
-
-        .descricao{
-            display: flex;
-            flex-direction: column;
-            width: 384px;
-            height: 52px;
-            gap: 12px; 
-            margin-top: 12px; 
-            text-align: left;
-            font-family: Archivo;
-         
-                   
-        }
-
-        .nome-tenis{
-            display: flex;
-            flex-direction: column;
-            width: 384px;
-            height: 23px;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 23.4px;
-            
-            color: #121214;
-            
-        }
-
-        .air-jordan{
-            display: flex;
-            flex-direction: column;
-            width: 117px;
-            height: 17px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 17.41px;
-            color:#7CA2F4;  
-        }
-
-        .preco {
-            display: flex;
-            flex-direction: column;
-            /*align-items: flex-start;  Alinha o conteúdo na extremidade direita */
-            width: 107px;
-            height: 26px;
-            font-family: Space Grotesk;
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 25.52px;
-            margin-top: 24px;
-            color: #121214;
-        }
-
-        /* Media Queries */
-
-        @media (max-width: 768px) {
-            #top-fixed{
-                height: 41px;
-                width: 100%;
-            }
-
-            #frete-gratis h4{
-                width: 211px;
-                height: 17px;        
-                font-size: 16px;
-                line-height: 17.41px;           
-            }
-
-            #hero {
-                background: linear-gradient(0deg, rgba(18, 18, 20, 0.75), rgba(18, 18, 20, 0.75)), url(Imagens/Jordan.png);
-                height: 350px;
-                padding-top: 41px;
-                
-                background-size: cover; /* obriga a imagem a cobrir todo o espaço da tela*/
-                width: 100%;
-            }
-
-            #titulo-hero{
-                width: 457px;
-                height: 162px;
-                margin-left: 172px;
-                gap: 30px;
-            }
-
-
-            #caixa-vetor{
-                width: 142px;
-                height: 24px;
-                display: flex;
-                flex-direction: row;
-
-            }
-
-            #vetor{
-                width: 24px;
-                height: 24px;
-                padding: 3px 2.59px 3.03px 2.21px;
-                }
-
-            #frase-vetor{
-                width: 110px;
-                height: 20px;
-                font-size: 18px;
-                line-height: 19.58px;
-                
-            }
-
-            #descricao-hero{
-                height: 88px;
-                gap: 12px;
-                
-            }
-
-            #titulo{
-                width: 254px;
-                height: 26px;
-                font-size: 24px;
-                line-height: 26.11px;
-                
-            }
-
-            #conteudo{
-                height: 50px;
-                font-size: 18px;
-                line-height: 25.2px;
-            }
-
-            #loja{
-                width: 100%;
-                Height: 1315px;
-                top: 391px;
-                left: 32px;
-                padding: 56px 0px 56px 0px;
-                gap: 40px;
-            }
-
-            #cabecalho-loja{
-                width: 520px;
-                height: 82px;
-                gap: 12px;
-            }
-
-            #titulo-loja{
-                width: 273px;
-                height: 26px;
-                font-size: 24px;
-                line-height:26.11px;
-            }
-
-            #texto-loja{
-                width: 520px;
-                height: 44px;
-                font-size: 16px;
-                line-height: 22.4px;
-            }
-
-            #shop{
-                width: 704px;
-                height: 1081px;
-                margin: 8px;
-            }
-
-            .container{
-                width: calc(50% - 24px);              
-                gap: 24px;
-                Height: 326px;
-                Gap: 24px;                
-            }
-
-            
-
-
-
-        }
-
-        @media (max-width: 480px) {
-            #top-fixed{
-                height: 39px;
-                width: 100%;
-            }
-
-            #frete-gratis h4{
-                width: 185px;
-                height: 15px;        
-                font-size: 14px;
-                line-height: 15.23px;           
-            }
-
-            #hero {
-                background: linear-gradient(0deg, rgba(18, 18, 20, 0.75), rgba(18, 18, 20, 0.75)), url(Imagens/Jordan.png);
-                height: 350px;
-                padding-top: 39px;
-                
-                background-size: cover; /* obriga a imagem a cobrir todo o espaço da tela*/
-                display: flex;
-                flex-direction: column;
-            }
-
-            #titulo-hero{
-                width: 328px;
-                height: 168px;
-                margin-left: 24px;
-                gap: 20px;
-            }
-            
-
-            #caixa-vetor{
-                width: 142px;
-                height: 24px;
-            }
-
-            #vetor{
-                width: 24px;
-                height: 24px;
-                padding: 3px 2.59px 3.03px 2.21px;
-                }
-
-            #frase-vetor{
-                width: 110px;
-                height: 20px;
-                font-size: 18px;
-                line-height: 19.58px;
-                
-            }
-
-            #descricao-hero{
-                width: 328px;
-                height: 104px;
-                gap: 12px;
-                
-            }
-
-            #titulo{
-                width: 328px;
-                height: 26px;
-                font-size: 24px;
-                line-height: 26.11px;
-                
-            }
-
-            #conteudo{
-                width: 328px;
-                height: 66px;
-                font-size: 16px;
-                line-height: 22.4px;
-            }
-
-            #loja{
-                
-                width: 100%;
-                Height: 2421px;
-                top: 391px;
-                left: 32px;
-                padding: 56px 0px 56px 0px;
-                gap: 40px;
-            }
-
-            #cabecalho-loja{
-                width: 319px;
-                height: 94px;
-                gap: 12px;
-            }
-
-            #titulo-loja{
-                width: 227px;
-                height: 22px;
-                font-size: 20px;
-                line-height:21.76px;
-                
-            }
-            
-
-            #texto-loja{
-                width: 100%;
-                height: 60px;
-                font-size: 14px;
-                line-height: 19.6px; 
-                word-break: break-word;              
-            }
-
-            #shop{
-                
-                width: 319px;
-                height: 2175px;
-                margin: 32px;
-            }
-
-            .container{
-                width: 319px;             
-                gap: 24px;
-                Height: 326px;         
-            }
-
-            .tenis{
-                
-                width: 100%;
-                height: 200px;
-                gap: 10px;
-            }
-
-            .descricao{
-                width: 100%;
-                height: 50px;
-
-            }
-            
-            .nome-tenis{
-                width: 100%;
-                height: 23px;
-                font-size: 16px;
-                line-height: 20.8px;                
-            }
-
-            .preco{
-                width: 107px;
-                margin-top: 0px;           
-            }
-
-
-    }
-
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* impede que o tamanho da cixa mude */
+}
+
+#top-fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  gap: 10px;
+  background-color: #f3f7ff;
+}
+
+#frete-gratis h4 {
+  width: 316px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f7ff;
+
+  font-family: Archivo;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.11px;
+  text-align: center;
+  color: #121214;
+}
+
+#hero {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(
+      0deg,
+      rgba(18, 18, 20, 0.75),
+      rgba(18, 18, 20, 0.75)
+    ),
+    url(Imagens/Jordan.png);
+  padding-top: 94px;
+}
+
+#titulo-hero {
+  display: flex;
+  flex-direction: column;
+  width: 557px;
+  height: 211px;
+  margin-left: 352px;
+  gap: 40px;
+}
+
+#caixa-vetor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 203px;
+  height: 48px;
+  gap: 8px;
+}
+
+#vetor {
+  display: flex;
+  width: 38.4px;
+  height: 35.94px;
+  top: 6px;
+  left: 4.42px;
+
+  color: #ffffff;
+}
+
+#frase-vetor {
+  display: flex;
+  width: 147px;
+  height: 26px;
+
+  font-family: Archivo;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.11px;
+  text-align: left;
+  color: #ffffff;
+}
+
+#descricao-hero {
+  display: flex;
+  flex-direction: column;
+  width: 557px;
+  height: 123px;
+  gap: 20px;
+  opacity: 0px;
+}
+
+#titulo {
+  width: 339px;
+  height: 35px;
+
+  font-family: Archivo;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 34.82px;
+  text-align: left;
+  color: #ffffff;
+}
+
+#conteudo {
+  white-space: pre-line; /* serve para que a quebra do html funcione aqui */
+  width: 557px;
+  height: 68px;
+  font-family: Archivo;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: left;
+  color: #ffffff;
+}
+
+#loja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 1051px;
+  /*left: 352px;
+                top: 464px; */
+  padding: 80px 0px 80px 0px;
+  gap: 72px;
+}
+
+#cabecalho-loja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 593px;
+  height: 127px;
+  gap: 24px;
+}
+
+#titulo-loja {
+  width: 363px;
+  height: 35px;
+  font-family: Archivo;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 34.82px;
+  text-align: center;
+}
+
+#texto-loja {
+  width: 593px;
+  height: 68px;
+  white-space: pre-line;
+  font-family: Archivo;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: center;
+}
+
+#shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1216px;
+  height: 692px;
+  gap: 32px;
+}
+
+.container {
+  width: calc(33.33% - 32px);
+  height: 326px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.tenis {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f7ff;
+}
+
+.tenis img {
+  width: 225px;
+  height: 135px;
+  margin: auto;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  width: 384px;
+  height: 52px;
+  gap: 12px;
+  margin-top: 12px;
+  text-align: left;
+  font-family: Archivo;
+}
+
+.nome-tenis {
+  display: flex;
+  flex-direction: column;
+  width: 384px;
+  height: 23px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+
+  color: #121214;
+}
+
+.air-jordan {
+  display: flex;
+  flex-direction: column;
+  width: 117px;
+  height: 17px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17.41px;
+  color: #7ca2f4;
+}
+
+.preco {
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-start;  Alinha o conteúdo na extremidade direita */
+  width: 107px;
+  height: 26px;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25.52px;
+  margin-top: 24px;
+  color: #121214;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  #top-fixed {
+    height: 41px;
+    width: 100%;
+  }
+
+  #frete-gratis h4 {
+    width: 211px;
+    height: 17px;
+    font-size: 16px;
+    line-height: 17.41px;
+  }
+
+  #hero {
+    background: linear-gradient(
+        0deg,
+        rgba(18, 18, 20, 0.75),
+        rgba(18, 18, 20, 0.75)
+      ),
+      url(Imagens/Jordan.png);
+    height: 350px;
+    padding-top: 41px;
+
+    background-size: cover; /* obriga a imagem a cobrir todo o espaço da tela*/
+    width: 100%;
+  }
+
+  #titulo-hero {
+    width: 457px;
+    height: 162px;
+    margin-left: 172px;
+    gap: 30px;
+  }
+
+  #caixa-vetor {
+    width: 142px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #vetor {
+    width: 24px;
+    height: 24px;
+    padding: 3px 2.59px 3.03px 2.21px;
+  }
+
+  #frase-vetor {
+    width: 110px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 19.58px;
+  }
+
+  #descricao-hero {
+    height: 88px;
+    gap: 12px;
+  }
+
+  #titulo {
+    width: 254px;
+    height: 26px;
+    font-size: 24px;
+    line-height: 26.11px;
+  }
+
+  #conteudo {
+    height: 50px;
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+
+  #loja {
+    width: 100%;
+    height: 1315px;
+    top: 391px;
+    left: 32px;
+    padding: 56px 0px 56px 0px;
+    gap: 40px;
+  }
+
+  #cabecalho-loja {
+    width: 520px;
+    height: 82px;
+    gap: 12px;
+  }
+
+  #titulo-loja {
+    width: 273px;
+    height: 26px;
+    font-size: 24px;
+    line-height: 26.11px;
+  }
+
+  #texto-loja {
+    width: 520px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  #shop {
+    width: 704px;
+    height: 1081px;
+    margin: 8px;
+  }
+
+  .container {
+    width: calc(50% - 24px);
+    gap: 24px;
+    height: 326px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  #top-fixed {
+    height: 39px;
+    width: 100%;
+  }
+
+  #frete-gratis h4 {
+    width: 185px;
+    height: 15px;
+    font-size: 14px;
+    line-height: 15.23px;
+  }
+
+  #hero {
+    background: linear-gradient(
+        0deg,
+        rgba(18, 18, 20, 0.75),
+        rgba(18, 18, 20, 0.75)
+      ),
+      url(Imagens/Jordan.png);
+    height: 350px;
+    padding-top: 39px;
+
+    background-size: cover; /* obriga a imagem a cobrir todo o espaço da tela*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  #titulo-hero {
+    width: 328px;
+    height: 168px;
+    margin-left: 24px;
+    gap: 20px;
+  }
+
+  #caixa-vetor {
+    width: 142px;
+    height: 24px;
+  }
+
+  #vetor {
+    width: 24px;
+    height: 24px;
+    padding: 3px 2.59px 3.03px 2.21px;
+  }
+
+  #frase-vetor {
+    width: 110px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 19.58px;
+  }
+
+  #descricao-hero {
+    width: 328px;
+    height: 104px;
+    gap: 12px;
+  }
+
+  #titulo {
+    width: 328px;
+    height: 26px;
+    font-size: 24px;
+    line-height: 26.11px;
+  }
+
+  #conteudo {
+    width: 328px;
+    height: 66px;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  #loja {
+    width: 100%;
+    height: 2421px;
+    top: 391px;
+    left: 32px;
+    padding: 56px 0px 56px 0px;
+    gap: 40px;
+  }
+
+  #cabecalho-loja {
+    width: 319px;
+    height: 94px;
+    gap: 12px;
+  }
+
+  #titulo-loja {
+    width: 227px;
+    height: 22px;
+    font-size: 20px;
+    line-height: 21.76px;
+  }
+
+  #texto-loja {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    line-height: 19.6px;
+    word-break: break-word;
+  }
+
+  #shop {
+    width: 319px;
+    height: 2175px;
+    margin: 32px;
+  }
+
+  .container {
+    width: 319px;
+    gap: 24px;
+    height: 326px;
+  }
+
+  .tenis {
+    width: 100%;
+    height: 200px;
+    gap: 10px;
+  }
+
+  .descricao {
+    width: 100%;
+    height: 50px;
+  }
+
+  .nome-tenis {
+    width: 100%;
+    height: 23px;
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .preco {
+    width: 107px;
+    margin-top: 0px;
+  }
+}
