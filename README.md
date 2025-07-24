@@ -30,13 +30,14 @@ A página simula a apresentação de uma loja de calçados esportivos. Foram apl
 ├── Imagens/          # Pasta com imagens usadas na vitrine
 └── README.md         # Documentação do projeto
 
-🚀 Como usar
+
+## 🚀 Como usar
 Clone o repositório:
 
 git clone https://github.com/mayrahelena/landingpage-loja-tenis.git
 Abra o arquivo index.html no seu navegador.
 
-📌 Status do projeto
+## 📌 Status do projeto
 ✅ Finalizado como exercício de aprendizado. Futuras melhorias podem incluir:
 
 Responsividade (para dispositivos móveis)
@@ -45,5 +46,5 @@ Interatividade com JavaScript
 
 Integração com backend ou sistemas de carrinho de compras
 
-👩‍💻 Autoria
+## 👩‍💻 Autoria
 Projeto desenvolvido por Mayra Oliveira, com fins didáticos.
