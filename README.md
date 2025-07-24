@@ -29,16 +29,6 @@ A página simula a apresentação de uma loja de calçados esportivos. Foram apl
 
 ---
 
-## Estrutura de pastas
-
-📁 projeto/
-├── index.html → Página principal
-├── styles.css → Arquivo de estilos
-├── Imagens/ → Imagens usadas no site
-└── README.md → Documentação do projeto
-
----
-
 ## Como visualizar
 
 1. Clone o repositório:
@@ -46,7 +36,7 @@ git clone https://github.com/mayrahelena/landingpage-loja-tenis.git
 
 2. Acesse a pasta:
 
-cd landingpage-loja-tenis
+     cd landingpage-loja-tenis
 
 3. Abra o arquivo `index.html` em seu navegador.
 
